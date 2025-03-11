@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image" href="C:\Users\agyan\OneDrive\Desktop\my coding\Web_development\form\frontend\images.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Submitted Data</h1>
+
+    </div>
+    <div id="name" class="public">
+        <p><strong>Name:</strong> <%= username %></p>
+    </div>
+    <div id="full_adderess" class="public">
+        <p><strong>Full Address:</strong> <%= full_address %></p>
+    </div>
+    <div id="email" class="public">
+        <p><strong>Email:</strong> <%= email %></p>
+    </div>
+    <div id="mobile_no" class="public">
+        <p><strong>Mobile No:</strong> <%= mobile_no %></p>
+    </div>
+    <div id="dob" class="public">
+        <p><strong>D.O.B:</strong> <%= dob %></p>
+    </div>
+    <div id="gender" class="public">
+        <p><strong>Gender:</strong> <%= gender %></p>
+    </div>
+    <div id="marriage" class="public">
+        <p><strong>Marriage Status:</strong> <%= marriage_status %></p>
+    </div>
+    <div id="yourself" class="public">
+        <p><strong>About Yourself:</strong> <%= message %></p>
+    </div>
+    <div id="final">
+        <h2>are you want to final submit</h2>
+
+    </div>
+    <div id="button">
+        <button id="button1" type="submit">Submit now</button>
+        <button id ="button2" type="reset">Back</button>
+    </div>
+    <script>
+        const btn=document.querySelector("#button1");
+        btn.addEventListener("click",()=>{
+            alert("your form is submited");
+            setInterval(() => {
+                window.history.back();
+            }, 30);
+        })
+        alert("please check your data");
+        const btn1=document.querySelector("#button2");
+
+        btn1.addEventListener("click", () => {
+            window.history.back();
+        });
+
+    </script>
+</body>
+</html>

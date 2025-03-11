@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image" href="images.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <h1>Enter your details!</h1>
+    <hr>
+    <form method="post" action="http://localhost:3000/submit">
+        
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username" placeholder="Enter your name" required>
+        </div>
+        
+        <div>
+            <label for="address">Full Address:</label>
+            <input type="text" id="address" name="full_address" placeholder="Enter your address" required>
+        </div>
+        
+        <div>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+        </div>
+        
+        <div>
+            <label for="mobile">Mob. No:</label>
+            <input type="number" id="mobile" name="mobile_no" placeholder="Enter your mobile no." required>
+        </div>
+        
+        <div>
+            <label for="dob">D.O.B</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="Other">
+            <label for="other">Other</label>
+        </div>
+        
+        <div>
+            <label for="eligible">Are you eligible?</label>
+            <input type="checkbox" name="eligibility" id="eligible">
+        </div>
+        
+        <div>
+            <label for="marriage">Marriage Status:</label>
+            <select name="marriage_status" id="marriage">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="yourself">Write about yourself:</label> <br>
+            <textarea name="message" cols="80" rows="10" id="yourself" placeholder="Write here"></textarea>
+        </div>
+        
+        <div>
+            <button id="button1" type="submit">Submit now</button>
+            <button id ="button2" type="reset">Reset</button>
+        </div>
+        
+    </form>
+</body>
+</html>
